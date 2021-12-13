@@ -1,0 +1,724 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "DAS+ECU"
+Date "2021-12-13"
+Rev "v1"
+Comp "E-Agle TRT"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1200 1750 0    50   BiDi ~ 0
+CAN1_H
+$Comp
+L power:GND #PWR053
+U 1 1 61A468C7
+P 4000 950
+F 0 "#PWR053" H 4000 700 50  0001 C CNN
+F 1 "GND" V 4000 750 50  0000 C CNN
+F 2 "" H 4000 950 50  0001 C CNN
+F 3 "" H 4000 950 50  0001 C CNN
+	1    4000 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 61A490F0
+P 4000 2550
+F 0 "#PWR054" H 4000 2300 50  0001 C CNN
+F 1 "GND" V 4000 2350 50  0000 C CNN
+F 2 "" H 4000 2550 50  0001 C CNN
+F 3 "" H 4000 2550 50  0001 C CNN
+	1    4000 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR055
+U 1 1 61A4A8A9
+P 4000 3350
+F 0 "#PWR055" H 4000 3100 50  0001 C CNN
+F 1 "GND" V 4000 3150 50  0000 C CNN
+F 2 "" H 4000 3350 50  0001 C CNN
+F 3 "" H 4000 3350 50  0001 C CNN
+	1    4000 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Eagle_Main:Brain-STM32F765VG J11
+U 1 1 61A70706
+P 1700 2750
+F 0 "J11" H 1700 4817 50  0000 C CNN
+F 1 "Brain-STM32F765VG" H 1700 4726 50  0000 C CNN
+F 2 "Eagle_Main:SODIMM_144_TE_390322-1" H 1450 2750 50  0001 L BNN
+F 3 "" H 1700 2600 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 1150 2450 50  0001 L BNN "STANDARD"
+F 5 "L1" H 1650 2550 50  0001 L BNN "PARTREV"
+F 6 "TE Connectivity" H 1400 2650 50  0001 L BNN "MANUFACTURER"
+	1    1700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Eagle_Main:Brain-STM32F765VG J11
+U 2 1 61A7B7AB
+P 3550 2800
+F 0 "J11" H 3500 5017 50  0000 C CNN
+F 1 "Brain-STM32F765VG" H 3500 4926 50  0000 C CNN
+F 2 "Eagle_Main:SODIMM_144_TE_390322-1" H 3300 2800 50  0001 L BNN
+F 3 "" H 3550 2650 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 3000 2500 50  0001 L BNN "STANDARD"
+F 5 "L1" H 3500 2600 50  0001 L BNN "PARTREV"
+F 6 "TE Connectivity" H 3250 2700 50  0001 L BNN "MANUFACTURER"
+	2    3550 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 1850 0    50   BiDi ~ 0
+CAN1_L
+Text HLabel 1200 1550 0    50   BiDi ~ 0
+CAN2_H
+Text HLabel 1200 1650 0    50   BiDi ~ 0
+CAN2_L
+Text HLabel 4525 6450 0    50   Input ~ 0
+SPI3_SCK
+Text HLabel 4525 6550 0    50   Output ~ 0
+SPI3_MISO
+Text Label 7475 2800 2    50   ~ 0
+Buzzer
+Text HLabel 6050 7050 2    50   Input ~ 0
+TIM2_CH1
+Text HLabel 4525 6250 0    50   Input ~ 0
+TIM2_CH2
+Text HLabel 6050 6950 2    50   Input ~ 0
+ACC_1
+Text HLabel 6050 6750 2    50   Input ~ 0
+ACC_2
+$Comp
+L Device:R R?
+U 1 1 61C04F5F
+P 1650 7300
+AR Path="/61C04F5F" Ref="R?"  Part="1" 
+AR Path="/61A00C0D/61C04F5F" Ref="R1"  Part="1" 
+F 0 "R1" V 1750 7250 50  0000 L CNN
+F 1 "120" V 1650 7300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1580 7300 50  0001 C CNN
+F 3 "~" H 1650 7300 50  0001 C CNN
+	1    1650 7300
+	0    -1   -1   0   
+$EndComp
+Text Notes 1850 7250 2    50   ~ 0
+DNP
+$Comp
+L Device:R R?
+U 1 1 61C04F66
+P 1650 7500
+AR Path="/61C04F66" Ref="R?"  Part="1" 
+AR Path="/61A00C0D/61C04F66" Ref="R2"  Part="1" 
+F 0 "R2" V 1750 7500 50  0000 C CNN
+F 1 "120" V 1650 7500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1580 7500 50  0001 C CNN
+F 3 "~" H 1650 7500 50  0001 C CNN
+	1    1650 7500
+	0    -1   -1   0   
+$EndComp
+Text Notes 1850 7450 2    50   ~ 0
+DNP
+Text HLabel 1500 7500 0    50   BiDi ~ 0
+CAN1_H
+Text HLabel 1800 7500 2    50   BiDi ~ 0
+CAN1_L
+Text HLabel 1500 7300 0    50   BiDi ~ 0
+CAN2_H
+Text HLabel 1800 7300 2    50   BiDi ~ 0
+CAN2_L
+$Comp
+L Device:R_Pack04_Split RN?
+U 3 1 61D035C4
+P 7200 6700
+AR Path="/61D035C4" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61D035C4" Ref="RN?"  Part="3" 
+AR Path="/61A00C0D/61D035C4" Ref="RN?"  Part="3" 
+F 0 "RN?" V 7300 6700 50  0000 C CNN
+F 1 "33" V 7200 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7475 6700 50  0001 C CNN
+F 3 "~" H 7200 6700 50  0001 C CNN
+	3    7200 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN?
+U 4 1 61D035CA
+P 7200 6900
+AR Path="/61D035CA" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61D035CA" Ref="RN?"  Part="4" 
+AR Path="/61A00C0D/61D035CA" Ref="RN?"  Part="4" 
+F 0 "RN?" V 7300 6900 50  0000 C CNN
+F 1 "33" V 7200 6900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7475 6900 50  0001 C CNN
+F 3 "~" H 7200 6900 50  0001 C CNN
+	4    7200 6900
+	0    -1   -1   0   
+$EndComp
+Text Notes 900  5400 0    100  ~ 20
+CAN stuff
+$Comp
+L Diode:1N4148W D?
+U 1 1 61D46829
+P 9350 5500
+F 0 "D?" V 9304 5580 50  0000 L CNN
+F 1 "1N4148W" V 9395 5580 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 9350 5325 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9350 5500 50  0001 C CNN
+	1    9350 5500
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	3700 7750 3700 5200
+Wire Notes Line
+	550  5200 3700 5200
+NoConn ~ 8400 3200
+NoConn ~ 8400 3100
+NoConn ~ 8400 3000
+NoConn ~ 8400 2900
+NoConn ~ 8400 2800
+NoConn ~ 8400 2700
+NoConn ~ 8400 2500
+NoConn ~ 8400 2400
+NoConn ~ 8400 2300
+NoConn ~ 8400 2100
+NoConn ~ 8400 2000
+NoConn ~ 8400 1900
+NoConn ~ 10000 1600
+NoConn ~ 10000 1700
+NoConn ~ 10000 1900
+NoConn ~ 10000 2000
+NoConn ~ 10000 2200
+NoConn ~ 10000 2600
+NoConn ~ 10000 3200
+NoConn ~ 10000 3300
+$Comp
+L power:GND #PWR?
+U 1 1 61BB78F7
+P 9600 3900
+AR Path="/61BB78F7" Ref="#PWR?"  Part="1" 
+AR Path="/61B9CD30/61BB78F7" Ref="#PWR?"  Part="1" 
+AR Path="/61A00C0D/61BB78F7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9600 3650 50  0001 C CNN
+F 1 "GND" H 9600 3750 50  0000 C CNN
+F 2 "" H 9600 3900 50  0001 C CNN
+F 3 "" H 9600 3900 50  0001 C CNN
+	1    9600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Raspberry_Pi_2_3 J?
+U 1 1 61BB7901
+P 9200 2500
+AR Path="/61BB7901" Ref="J?"  Part="1" 
+AR Path="/61B9CD30/61BB7901" Ref="J?"  Part="1" 
+AR Path="/61A00C0D/61BB7901" Ref="J?"  Part="1" 
+F 0 "J?" H 9450 3850 50  0000 L CNN
+F 1 "Raspberry_Pi_2_3" H 9450 3750 50  0000 L CNN
+F 2 "Eagle_Main:raspberrypi_hat_template" H 9200 2500 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7000 Q?
+U 1 1 61BB9658
+P 9250 5950
+F 0 "Q?" H 9454 5996 50  0000 L CNN
+F 1 "2N7000" H 9454 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9450 5875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 9250 5950 50  0001 L CNN
+	1    9250 5950
+	1    0    0    -1  
+$EndComp
+Text HLabel 5600 7100 0    50   Input ~ 0
+PA2_Analog_IO
+Text HLabel 5600 7200 0    50   Input ~ 0
+PA3_Analog_IO
+Text HLabel 5600 6300 0    50   Input ~ 0
+PC0_Analog_IO
+Text HLabel 5600 7000 0    50   Input Italic 0
+TIM5_CH2
+Text HLabel 5600 6900 0    50   Input ~ 0
+TIM5_CH1
+Wire Wire Line
+	9600 3900 9600 3850
+Wire Wire Line
+	9600 3850 9500 3850
+Wire Wire Line
+	8800 3850 8800 3800
+Wire Wire Line
+	8900 3800 8900 3850
+Connection ~ 8900 3850
+Wire Wire Line
+	8900 3850 8800 3850
+Wire Wire Line
+	9000 3800 9000 3850
+Connection ~ 9000 3850
+Wire Wire Line
+	9000 3850 8900 3850
+Wire Wire Line
+	9100 3800 9100 3850
+Connection ~ 9100 3850
+Wire Wire Line
+	9100 3850 9000 3850
+Wire Wire Line
+	9200 3800 9200 3850
+Connection ~ 9200 3850
+Wire Wire Line
+	9200 3850 9100 3850
+Wire Wire Line
+	9300 3800 9300 3850
+Connection ~ 9300 3850
+Wire Wire Line
+	9300 3850 9200 3850
+Wire Wire Line
+	9400 3800 9400 3850
+Connection ~ 9400 3850
+Wire Wire Line
+	9400 3850 9300 3850
+Wire Wire Line
+	9500 3800 9500 3850
+Connection ~ 9500 3850
+Wire Wire Line
+	9500 3850 9400 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 61BDB6AF
+P 9000 1200
+F 0 "#PWR?" H 9000 1050 50  0001 C CNN
+F 1 "+5V" V 9000 1400 50  0000 C CNN
+F 2 "" H 9000 1200 50  0001 C CNN
+F 3 "" H 9000 1200 50  0001 C CNN
+	1    9000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61BDC04D
+P 9100 1200
+F 0 "#PWR?" H 9100 1050 50  0001 C CNN
+F 1 "+5V" V 9100 1400 50  0000 C CNN
+F 2 "" H 9100 1200 50  0001 C CNN
+F 3 "" H 9100 1200 50  0001 C CNN
+	1    9100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61BDC931
+P 9300 1200
+F 0 "#PWR?" H 9300 1050 50  0001 C CNN
+F 1 "+3.3V" V 9300 1400 50  0000 C CNN
+F 2 "" H 9300 1200 50  0001 C CNN
+F 3 "" H 9300 1200 50  0001 C CNN
+	1    9300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61BDD386
+P 9400 1200
+F 0 "#PWR?" H 9400 1050 50  0001 C CNN
+F 1 "+3.3V" V 9400 1400 50  0000 C CNN
+F 2 "" H 9400 1200 50  0001 C CNN
+F 3 "" H 9400 1200 50  0001 C CNN
+	1    9400 1200
+	1    0    0    -1  
+$EndComp
+Text Label 10550 2400 2    50   ~ 0
+CANTX_NVIDIA
+Text Label 10550 2300 2    50   ~ 0
+CANRX_NVIDIA
+Wire Wire Line
+	10550 2400 10000 2400
+Wire Wire Line
+	10000 2300 10550 2300
+Wire Wire Line
+	1100 6300 550  6300
+Wire Wire Line
+	550  6200 1100 6200
+Text Label 550  6300 0    50   ~ 0
+CANRX_NVIDIA
+Text Label 550  6200 0    50   ~ 0
+CANTX_NVIDIA
+$Comp
+L power:GND #PWR?
+U 1 1 61D4C660
+P 1400 6600
+F 0 "#PWR?" H 1400 6350 50  0001 C CNN
+F 1 "GND" V 1400 6350 50  0000 C CNN
+F 2 "" H 1400 6600 50  0001 C CNN
+F 3 "" H 1400 6600 50  0001 C CNN
+	1    1400 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61D4B884
+P 1400 6500
+F 0 "#PWR?" H 1400 6350 50  0001 C CNN
+F 1 "+3.3V" V 1400 6750 50  0000 C CNN
+F 2 "" H 1400 6500 50  0001 C CNN
+F 3 "" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D4B4F9
+P 1900 6000
+F 0 "#PWR?" H 1900 5850 50  0001 C CNN
+F 1 "+5V" H 1915 6173 50  0000 C CNN
+F 2 "" H 1900 6000 50  0001 C CNN
+F 3 "" H 1900 6000 50  0001 C CNN
+	1    1900 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D45A1E
+P 3300 6250
+F 0 "#PWR?" H 3300 6100 50  0001 C CNN
+F 1 "+5V" H 3315 6423 50  0000 C CNN
+F 2 "" H 3300 6250 50  0001 C CNN
+F 3 "" H 3300 6250 50  0001 C CNN
+	1    3300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D45845
+P 3300 6550
+F 0 "#PWR?" H 3300 6300 50  0001 C CNN
+F 1 "GND" H 3305 6377 50  0000 C CNN
+F 2 "" H 3300 6550 50  0001 C CNN
+F 3 "" H 3300 6550 50  0001 C CNN
+	1    3300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61D4583F
+P 3300 6400
+F 0 "C?" H 3400 6450 50  0000 L CNN
+F 1 "100nF" H 3400 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3338 6250 50  0001 C CNN
+F 3 "~" H 3300 6400 50  0001 C CNN
+	1    3300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61D446B6
+P 2850 6250
+F 0 "#PWR?" H 2850 6100 50  0001 C CNN
+F 1 "+3.3V" H 2850 6400 50  0000 C CNN
+F 2 "" H 2850 6250 50  0001 C CNN
+F 3 "" H 2850 6250 50  0001 C CNN
+	1    2850 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D44159
+P 2850 6550
+F 0 "#PWR?" H 2850 6300 50  0001 C CNN
+F 1 "GND" H 2855 6377 50  0000 C CNN
+F 2 "" H 2850 6550 50  0001 C CNN
+F 3 "" H 2850 6550 50  0001 C CNN
+	1    2850 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D4283E
+P 1900 6800
+F 0 "#PWR?" H 1900 6550 50  0001 C CNN
+F 1 "GND" H 1905 6627 50  0000 C CNN
+F 2 "" H 1900 6800 50  0001 C CNN
+F 3 "" H 1900 6800 50  0001 C CNN
+	1    1900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 61C91763
+P 2850 6400
+F 0 "C22" H 2950 6450 50  0000 L CNN
+F 1 "100nF" H 2950 6350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 6250 50  0001 C CNN
+F 3 "~" H 2850 6400 50  0001 C CNN
+	1    2850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN?
+U 2 1 61D035BE
+P 1250 6300
+AR Path="/61D035BE" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61D035BE" Ref="RN?"  Part="2" 
+AR Path="/61A00C0D/61D035BE" Ref="RN?"  Part="2" 
+F 0 "RN?" V 1150 6300 50  0000 C CNN
+F 1 "33" V 1250 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1525 6300 50  0001 C CNN
+F 3 "~" H 1250 6300 50  0001 C CNN
+	2    1250 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Pack04_Split RN?
+U 1 1 61D035B8
+P 1250 6200
+AR Path="/61D035B8" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61D035B8" Ref="RN?"  Part="1" 
+AR Path="/61A00C0D/61D035B8" Ref="RN?"  Part="1" 
+F 0 "RN?" V 1350 6200 50  0000 C CNN
+F 1 "33" V 1250 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1525 6200 50  0001 C CNN
+F 3 "~" H 1250 6200 50  0001 C CNN
+	1    1250 6200
+	0    -1   -1   0   
+$EndComp
+Text Notes 1200 5750 0    50   ~ 0
+Transceiver for when nvidia is used.
+Text HLabel 2400 6500 2    50   BiDi ~ 0
+CANL1
+Text HLabel 2400 6300 2    50   BiDi ~ 0
+CANH1
+$Comp
+L Interface_CAN_LIN:MCP2562-E-SN U7
+U 1 1 61AFE325
+P 1900 6400
+F 0 "U7" H 1550 6775 50  0000 C CNN
+F 1 "MCP2562-E-SN" H 2250 6750 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1900 5900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25167A.pdf" H 1900 6400 50  0001 C CNN
+	1    1900 6400
+	1    0    0    -1  
+$EndComp
+Text Label 10550 2800 2    50   ~ 0
+SPI_MISO
+Text Label 10550 2900 2    50   ~ 0
+SPI_MOSI
+Text Label 10550 3000 2    50   ~ 0
+SPI_CLK
+Text Label 10550 2700 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	10550 2700 10000 2700
+Wire Wire Line
+	10550 2800 10000 2800
+Wire Wire Line
+	10550 2900 10000 2900
+Wire Wire Line
+	10550 3000 10000 3000
+Text Label 7500 2500 2    50   ~ 0
+SPI_MISO
+Text Label 7500 2600 2    50   ~ 0
+SPI_MOSI
+Text Label 7500 2700 2    50   ~ 0
+SPI_CLK
+Text Label 7500 2400 2    50   ~ 0
+SPI_CS
+Wire Wire Line
+	7500 2400 6950 2400
+Wire Wire Line
+	7500 2500 6950 2500
+Wire Wire Line
+	7500 2600 6950 2600
+Wire Wire Line
+	7500 2700 6950 2700
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 61BE73A1
+P 6750 2600
+AR Path="/61BE73A1" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61BE73A1" Ref="RN?"  Part="3" 
+AR Path="/61A00C0D/61BE73A1" Ref="RN?"  Part="1" 
+F 0 "RN?" V 6950 2600 50  0000 C CNN
+F 1 "33" V 6450 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7025 2600 50  0001 C CNN
+F 3 "~" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 61B84D46
+P 7100 3200
+AR Path="/61B84D46" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61B84D46" Ref="RN?"  Part="3" 
+AR Path="/61A00C0D/61B84D46" Ref="RN?"  Part="1" 
+F 0 "RN?" V 7300 3200 50  0000 C CNN
+F 1 "10k" V 6800 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7375 3200 50  0001 C CNN
+F 3 "~" H 7100 3200 50  0001 C CNN
+	1    7100 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B8A86E
+P 7000 3400
+AR Path="/61B8A86E" Ref="#PWR?"  Part="1" 
+AR Path="/61B9CD30/61B8A86E" Ref="#PWR?"  Part="1" 
+AR Path="/61A00C0D/61B8A86E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7000 3150 50  0001 C CNN
+F 1 "GND" H 7000 3250 50  0000 C CNN
+F 2 "" H 7000 3400 50  0001 C CNN
+F 3 "" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2800 7000 2800
+Wire Wire Line
+	7000 3000 7000 2800
+Connection ~ 7000 2800
+Wire Wire Line
+	7000 2800 7475 2800
+$Comp
+L power:GND #PWR?
+U 1 1 61B91452
+P 9350 6150
+AR Path="/61B91452" Ref="#PWR?"  Part="1" 
+AR Path="/61B9CD30/61B91452" Ref="#PWR?"  Part="1" 
+AR Path="/61A00C0D/61B91452" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9350 5900 50  0001 C CNN
+F 1 "GND" H 9350 6000 50  0000 C CNN
+F 2 "" H 9350 6150 50  0001 C CNN
+F 3 "" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 3650 0    50   BiDi ~ 0
+SWDIO
+Text HLabel 1200 3750 0    50   Output ~ 0
+SWO
+Text HLabel 1200 3850 0    50   Input ~ 0
+SWCLK
+Text HLabel 1200 3550 0    50   Input ~ 0
+~RST~
+Text Label 8750 5950 0    50   ~ 0
+Buzzer
+Wire Wire Line
+	8750 5950 9050 5950
+$Comp
+L power:+12V #PWR?
+U 1 1 61B96656
+P 9350 5250
+F 0 "#PWR?" H 9350 5100 50  0001 C CNN
+F 1 "+12V" H 9365 5423 50  0000 C CNN
+F 2 "" H 9350 5250 50  0001 C CNN
+F 3 "" H 9350 5250 50  0001 C CNN
+	1    9350 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5250 9350 5350
+Wire Wire Line
+	9350 5650 9350 5750
+Text Notes 9850 5800 0    50   ~ 0
+TODO: buzzer
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 61BA0660
+P 7050 1700
+AR Path="/61BA0660" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61BA0660" Ref="RN?"  Part="3" 
+AR Path="/61A00C0D/61BA0660" Ref="RN?"  Part="1" 
+F 0 "RN?" V 7250 1700 50  0000 C CNN
+F 1 "33" V 6750 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7325 1700 50  0001 C CNN
+F 3 "~" H 7050 1700 50  0001 C CNN
+	1    7050 1700
+	0    -1   -1   0   
+$EndComp
+Text Label 8050 1600 0    50   ~ 0
+RASP_TX
+Text Label 8050 1700 0    50   ~ 0
+RASP_RX
+Wire Wire Line
+	8050 1600 8400 1600
+Wire Wire Line
+	8400 1700 8050 1700
+Text Label 7600 1700 2    50   ~ 0
+RASP_TX
+Text Label 7600 1600 2    50   ~ 0
+RASP_RX
+Wire Wire Line
+	7600 1700 7250 1700
+Wire Wire Line
+	7250 1600 7600 1600
+Text Label 6500 1600 0    50   ~ 0
+MCU_TX
+Text Label 6500 1700 0    50   ~ 0
+MCU_RX
+Wire Wire Line
+	6500 1600 6850 1600
+Wire Wire Line
+	6850 1700 6500 1700
+$Comp
+L power:GND #PWR?
+U 1 1 61BAE7CA
+P 3000 3050
+F 0 "#PWR?" H 3000 2800 50  0001 C CNN
+F 1 "GND" V 3000 2850 50  0000 C CNN
+F 2 "" H 3000 3050 50  0001 C CNN
+F 3 "" H 3000 3050 50  0001 C CNN
+	1    3000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BAF61C
+P 3000 3850
+F 0 "#PWR?" H 3000 3600 50  0001 C CNN
+F 1 "GND" V 3000 3650 50  0000 C CNN
+F 2 "" H 3000 3850 50  0001 C CNN
+F 3 "" H 3000 3850 50  0001 C CNN
+	1    3000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BB00B3
+P 2200 1350
+F 0 "#PWR?" H 2200 1100 50  0001 C CNN
+F 1 "GND" V 2200 1150 50  0000 C CNN
+F 2 "" H 2200 1350 50  0001 C CNN
+F 3 "" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61BB154C
+P 2200 950
+F 0 "#PWR?" H 2200 800 50  0001 C CNN
+F 1 "+5V" V 2200 1150 50  0000 C CNN
+F 2 "" H 2200 950 50  0001 C CNN
+F 3 "" H 2200 950 50  0001 C CNN
+	1    2200 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61BB25D6
+P 2200 1150
+F 0 "#PWR?" H 2200 1000 50  0001 C CNN
+F 1 "+3.3V" V 2200 1350 50  0000 C CNN
+F 2 "" H 2200 1150 50  0001 C CNN
+F 3 "" H 2200 1150 50  0001 C CNN
+	1    2200 1150
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
