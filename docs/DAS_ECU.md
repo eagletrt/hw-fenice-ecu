@@ -1,5 +1,36 @@
 # DAS+ECU
 
+## MCU configuration
+
+The MCU has the following design requirements and solutions found:
+- External crystal 16MHz
+	- RCC HSE Crystal Resonator
+- Debug interface
+	- Serial wire
+- Debugger UART communication
+	- USART3 (same as on nucleo devkit)
+- General timing
+	- TIM1 on internal clock
+- 4 ADC channels, 2 brakes and 2 accelerators
+	- ADC2, 8kHz single channel sampling
+- Wheels encoder mode timers, 32bit
+	- TIM2,TIM5
+- 3 PWM channels for brakelight
+	- TIM3
+- 2 CAN full featured busses
+	- CAN1,CAN3
+- SBC communication, UART with hardware flow control
+	- USART1
+- SBC communication, SPI full duplex slave mode
+	- SPI2, hardware NSS input
+	- DMA to map the MCU RAM to the SPI master
+- EEPROM/SDCARD SPI
+	- SPI3
+- Steering position encoder
+	- SPI4 receive only master
+- CRC module
+- Buzzer PWM
+	- PWM channel on TIM1
 
 ## Accelerator
 
