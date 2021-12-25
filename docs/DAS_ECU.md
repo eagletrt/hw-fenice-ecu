@@ -2,7 +2,7 @@
 
 ## MCU configuration
 
-The MCU has the following design requirements and solutions found:
+The MCU STM32F765VGT6 has the following design requirements and solutions found:
 - External crystal 16MHz
 	- RCC HSE Crystal Resonator
 - Debug interface
@@ -11,10 +11,10 @@ The MCU has the following design requirements and solutions found:
 	- USART3 (same as on nucleo devkit)
 - General timing
 	- TIM1 on internal clock
-- 4 ADC channels, 2 brakes and 2 accelerators
-	- ADC2, 8kHz single channel sampling
 - Wheels encoder mode timers, 32bit
 	- TIM2,TIM5
+- 4 ADC channels, 2 brakes and 2 accelerators
+	- ADC2, 8kHz single channel sampling
 - 3 PWM channels for brakelight
 	- TIM3
 - 2 CAN full featured busses
@@ -28,6 +28,36 @@ The MCU has the following design requirements and solutions found:
 	- SPI3
 - Steering position encoder
 	- SPI4 receive only master
+- CRC module
+- Buzzer PWM
+	- PWM channel on TIM1
+
+The MCU STM32F446RET6 has the following design requirements and solutions found:
+- External crystal 16MHz
+	- RCC HSE Crystal Resonator
+- Debug interface
+	- Serial wire
+- Debugger UART communication
+	- USART2
+- General timing
+	- TIM1, Clock Source is internal clock
+- Wheels encoder mode timers, 32bit
+	- TIM2,TIM5
+- 2 CAN full featured busses
+	- CAN1,CAN2
+- SBC communication, UART with full hardware flow control
+	- USART1
+- SBC communication, SPI full duplex slave mode
+	- SPI1, hardware NSS input
+	- DMA to map the MCU RAM to the SPI master
+- Steering position encoder
+	- SPI3 receive only master
+- EEPROM/SDCARD SPI
+	- SPI2
+- 3 PWM channels for brakelight
+	- TIM3, Clock Source is internal clock
+- 4 ADC channels, 2 brakes and 2 accelerators
+	- AD1, 8kHz single channel sampling
 - CRC module
 - Buzzer PWM
 	- PWM channel on TIM1
