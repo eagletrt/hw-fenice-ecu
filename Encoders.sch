@@ -41,10 +41,6 @@ F 3 "" H 3000 1700 50  0001 C CNN
 	1    3000 1700
 	0    1    1    0   
 $EndComp
-Text Label 6800 1800 2    50   ~ 0
-SW_DATA_5
-Text Label 6800 1900 2    50   ~ 0
-SW_CLK_5
 Text Notes 700  5050 0    50   ~ 0
 Radial incremental magnetic rings: \nRLS MR075E060A120B00\n-outer diameter: 57mm\n-cross section height: 10mm\n-radial magnetisation\n-inner diameter: 85mm\n-with reference mark\n-number of poles: 120
 $Comp
@@ -609,9 +605,9 @@ F 3 "" H 4100 7150 50  0001 C CNN
 	1    4100 7150
 	1    0    0    -1  
 $EndComp
-Text HLabel 10050 4850 2    50   Output ~ 0
+Text HLabel 10150 3950 2    50   Output ~ 0
 WL_A
-Text HLabel 10050 4950 2    50   Output ~ 0
+Text HLabel 10150 4050 2    50   Output ~ 0
 WL_B
 Text HLabel 10050 5050 2    50   Output ~ 0
 WR_A
@@ -695,10 +691,6 @@ F 3 "~" H 5700 6350 50  0001 C CNN
 	4    5700 6350
 	0    -1   -1   0   
 $EndComp
-Text Label 6100 3800 2    50   ~ 0
-WL_A_5
-Text Label 6100 4200 2    50   ~ 0
-WL_B_5
 Wire Wire Line
 	6100 3800 5800 3800
 Wire Wire Line
@@ -711,14 +703,14 @@ Wire Wire Line
 	6150 5950 5850 5950
 Wire Wire Line
 	6150 6350 5850 6350
-Text Label 8850 4850 0    50   ~ 0
+Text Label 8850 3950 0    50   ~ 0
 WL_A_5
-Text Label 8850 4950 0    50   ~ 0
+Text Label 8850 4050 0    50   ~ 0
 WL_B_5
 Wire Wire Line
-	8850 4850 9150 4850
+	8850 3950 9150 3950
 Wire Wire Line
-	8850 4950 9150 4950
+	8850 4050 9150 4050
 Text Label 8850 5050 0    50   ~ 0
 WR_A_5
 Text Label 8850 5150 0    50   ~ 0
@@ -820,9 +812,9 @@ Wire Wire Line
 	6800 1800 6400 1800
 Wire Wire Line
 	6400 1900 6800 1900
-Text HLabel 10150 3950 2    50   Output ~ 0
+Text HLabel 10050 4850 2    50   Output ~ 0
 SW_DATA
-Text HLabel 10150 4050 2    50   Input ~ 0
+Text HLabel 10050 4950 2    50   Input ~ 0
 SW_CLK
 Wire Wire Line
 	10150 3950 9750 3950
@@ -842,14 +834,14 @@ NoConn ~ 9550 3750
 NoConn ~ 9550 3850
 NoConn ~ 9150 3850
 NoConn ~ 9150 3750
-Text Label 8750 3950 0    50   ~ 0
+Text Label 8750 4850 0    50   ~ 0
 SW_DATA_5
-Text Label 8750 4050 0    50   ~ 0
+Text Label 8750 4950 0    50   ~ 0
 SW_CLK_5
 Wire Wire Line
-	8750 3950 9150 3950
+	8750 4850 9150 4850
 Wire Wire Line
-	9150 4050 8750 4050
+	9150 4950 8750 4950
 NoConn ~ 9850 4150
 NoConn ~ 9950 4150
 $Comp
@@ -881,4 +873,14 @@ Text Notes 2150 3100 0    100  ~ 20
 LEFT WHEEL ENCODER
 Wire Notes Line
 	2050 5300 6500 5300
+Text Notes 4650 1050 0    50   ~ 0
+TODO: check if footprint is correct, not sure
+Text Label 6100 4200 2    50   ~ 0
+WL_B_5
+Text Label 6100 3800 2    50   ~ 0
+WL_A_5
+Text Label 6800 1900 2    50   ~ 0
+SW_CLK_5
+Text Label 6800 1800 2    50   ~ 0
+SW_DATA_5
 $EndSCHEMATC
