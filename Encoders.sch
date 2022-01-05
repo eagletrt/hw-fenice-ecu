@@ -112,7 +112,7 @@ U 1 1 61C7DD68
 P 5450 1850
 F 0 "U3" H 5350 2300 50  0000 C CNN
 F 1 "MAX490E" H 5700 2300 50  0000 C CNN
-F 2 "" H 5450 1250 50  0001 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5450 1250 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 5210 2300 50  0001 C CNN
 	1    5450 1850
 	-1   0    0    -1  
