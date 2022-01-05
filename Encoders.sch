@@ -45,7 +45,7 @@ Text Label 6800 1800 2    50   ~ 0
 SW_DATA_5
 Text Label 6800 1900 2    50   ~ 0
 SW_CLK_5
-Text Notes 6700 4900 0    50   ~ 0
+Text Notes 700  5050 0    50   ~ 0
 Radial incremental magnetic rings: \nRLS MR075E060A120B00\n-outer diameter: 57mm\n-cross section height: 10mm\n-radial magnetisation\n-inner diameter: 85mm\n-with reference mark\n-number of poles: 120
 $Comp
 L Device:R_Pack04 RN?
@@ -871,14 +871,14 @@ Wire Notes Line
 	500  2800 7750 2800
 Wire Notes Line
 	7750 2800 7750 550 
-Text Notes 700  5500 0    100  ~ 20
+Text Notes 2150 5500 0    100  ~ 20
 RIGHT WHEEL ENCODER
-Text Notes 6700 6100 0    50   ~ 0
+Text Notes 700  6250 0    50   ~ 0
 Wheel Encoder:\nRLS LM13ICD40AB10F00\n-RS422\n-interpolation factor: 400\n\nCable:\n-5V: Brown\n-GND: White\n-A+: Green\n-A-: Yellow\n-B+: Blue\n-B-: Red
 Wire Notes Line
 	6500 2800 6500 7750
-Text Notes 700  3100 0    100  ~ 20
+Text Notes 2150 3100 0    100  ~ 20
 LEFT WHEEL ENCODER
 Wire Notes Line
-	600  5300 6500 5300
+	2050 5300 6500 5300
 $EndSCHEMATC

@@ -1675,4 +1675,8 @@ F 3 "" H 8050 6200 50  0001 C CNN
 $EndComp
 Text Label 10700 2050 2    50   ~ 0
 CANRX_NVIDIA
+Text HLabel 2950 3300 3    50   Input ~ 0
+SWD_RX
+Text HLabel 2550 2900 0    50   Output ~ 0
+SWD_TX
 $EndSCHEMATC
