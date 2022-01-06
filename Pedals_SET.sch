@@ -228,13 +228,13 @@ Text Notes 500  1000 0    50   ~ 0
 Accelerator potentiometer:\nAviorace DIA95-25\n- resistance: 1.7kOhm\n- linear\n
 Text Notes 500  650  0    100  ~ 20
 ACCELERATOR
-Text Label 900  4500 0    50   ~ 0
-ACC_1_BUF
-Text Label 900  4600 0    50   ~ 0
-ACC_2_BUF
-Text Label 900  4700 0    50   ~ 0
-BRAKE_F_BUF
 Text Label 900  4800 0    50   ~ 0
+ACC_1_BUF
+Text Label 900  4700 0    50   ~ 0
+ACC_2_BUF
+Text Label 900  4600 0    50   ~ 0
+BRAKE_F_BUF
+Text Label 900  4500 0    50   ~ 0
 BRAKE_R_BUF
 Wire Wire Line
 	900  4500 1400 4500
@@ -244,13 +244,13 @@ Wire Wire Line
 	900  4700 1400 4700
 Wire Wire Line
 	900  4800 1400 4800
-Text HLabel 2300 4500 2    50   Output ~ 0
-ACC_1
-Text HLabel 2300 4600 2    50   Output ~ 0
-ACC_2
-Text HLabel 2300 4700 2    50   Output ~ 0
-BRAKE_F
 Text HLabel 2300 4800 2    50   Output ~ 0
+ACC_1
+Text HLabel 2300 4700 2    50   Output ~ 0
+ACC_2
+Text HLabel 2300 4600 2    50   Output ~ 0
+BRAKE_F
+Text HLabel 2300 4500 2    50   Output ~ 0
 BRAKE_R
 Wire Wire Line
 	2300 4500 2200 4500
@@ -437,13 +437,13 @@ F 3 "~" H 5800 6500 50  0001 C CNN
 	1    5800 6500
 	-1   0    0    -1  
 $EndComp
-Text Label 600  1300 0    50   ~ 0
+Text Label 600  2350 0    50   ~ 0
 ACC_S1
 Wire Wire Line
 	600  1300 900  1300
-Text Label 5450 1500 2    50   ~ 0
-BRAKE_F_BUF
 Text Label 5450 2550 2    50   ~ 0
+BRAKE_F_BUF
+Text Label 5450 1500 2    50   ~ 0
 BRAKE_R_BUF
 $Comp
 L Device:R R4
@@ -485,7 +485,7 @@ $EndComp
 Wire Wire Line
 	1250 2350 1450 2350
 Connection ~ 1250 2350
-Text Label 600  2350 0    50   ~ 0
+Text Label 600  1300 0    50   ~ 0
 ACC_S2
 Wire Wire Line
 	600  2350 900  2350
@@ -534,11 +534,9 @@ Wire Wire Line
 Connection ~ 2100 1400
 Wire Wire Line
 	2900 1400 2250 1400
-Text Label 2900 1400 2    50   ~ 0
-ACC_1_BUF
 Wire Wire Line
 	2900 2450 2250 2450
-Text Label 2900 2450 2    50   ~ 0
+Text Label 2900 1400 2    50   ~ 0
 ACC_2_BUF
 Connection ~ 2100 2450
 Wire Wire Line
@@ -891,11 +889,11 @@ Wire Wire Line
 	4800 2550 4650 2550
 Text Notes 3000 1150 0    50   ~ 0
 Brake pressure transducers:\nAviorace SP100\n- ratiometric\n- input: 0-100 bar\n- output: 0.5-4.5 V\n- precision: +-1%FS\n
-Text Label 3050 2450 0    50   ~ 0
+Text Label 3050 1400 0    50   ~ 0
 BRAKE_SR
 Wire Wire Line
 	3050 2450 3450 2450
-Text Label 3050 1400 0    50   ~ 0
+Text Label 3050 2450 0    50   ~ 0
 BRAKE_SF
 Wire Wire Line
 	3050 1400 3450 1400
@@ -913,4 +911,6 @@ Wire Notes Line
 	500  5700 6950 5700
 Text Label 6500 7150 2    50   ~ 0
 BRAKE_SF
+Text Label 2900 2450 2    50   ~ 0
+ACC_1_BUF
 $EndSCHEMATC

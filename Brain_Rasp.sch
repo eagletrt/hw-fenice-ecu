@@ -413,9 +413,9 @@ Text HLabel 2550 2100 0    50   Input ~ 0
 BRAKE_PRESSURE_FRONT
 Text HLabel 2550 2200 0    50   Input ~ 0
 BRAKE_PRESSURE_REAR
-Text HLabel 2550 2400 0    50   Input ~ 0
-ACCS_CH2
 Text HLabel 2550 2300 0    50   Input ~ 0
+ACCS_CH2
+Text HLabel 2550 2400 0    50   Input ~ 0
 ACCS_CH1
 $Comp
 L Device:Crystal_GND24_Small Y1
@@ -1855,4 +1855,17 @@ VCAP_1
 Wire Wire Line
 	6750 6250 6850 6250
 Connection ~ 6850 6250
+Text HLabel 5800 4850 2    50   Input ~ 0
+~RST~
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61EE1614
+P 5400 4850
+F 0 "#PWR?" H 5400 4700 50  0001 C CNN
+F 1 "+3.3V" V 5400 5100 50  0000 C CNN
+F 2 "" H 5400 4850 50  0001 C CNN
+F 3 "" H 5400 4850 50  0001 C CNN
+	1    5400 4850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

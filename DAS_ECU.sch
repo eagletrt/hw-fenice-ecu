@@ -712,4 +712,6 @@ F 3 "~" H 10450 6000 50  0001 C CNN
 	1    10450 6000
 	1    0    0    -1  
 $EndComp
+Text Notes 650  1550 0    50   ~ 0
+TODO: attach GND too
 $EndSCHEMATC

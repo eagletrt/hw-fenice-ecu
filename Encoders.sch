@@ -43,23 +43,6 @@ F 3 "" H 3000 1700 50  0001 C CNN
 $EndComp
 Text Notes 700  5050 0    50   ~ 0
 Radial incremental magnetic rings: \nRLS MR075E060A120B00\n-outer diameter: 57mm\n-cross section height: 10mm\n-radial magnetisation\n-inner diameter: 85mm\n-with reference mark\n-number of poles: 120
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 61C4B75B
-P 6200 1700
-AR Path="/61C4B75B" Ref="RN?"  Part="1" 
-AR Path="/61C45647/61C4B75B" Ref="RN8"  Part="1" 
-F 0 "RN8" V 6525 1700 50  0000 C CNN
-F 1 "33" V 6434 1700 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6475 1700 50  0001 C CNN
-F 3 "~" H 6200 1700 50  0001 C CNN
-	1    6200 1700
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 6400 1700
-NoConn ~ 6400 1600
-NoConn ~ 6000 1600
-NoConn ~ 6000 1700
 Text Label 2600 1800 0    50   ~ 0
 SW_CLK+
 $Comp
@@ -108,7 +91,7 @@ U 1 1 61C7DD68
 P 5450 1850
 F 0 "U3" H 5350 2300 50  0000 C CNN
 F 1 "MAX490E" H 5700 2300 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5450 1250 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5450 1250 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 5210 2300 50  0001 C CNN
 	1    5450 1850
 	-1   0    0    -1  
@@ -151,18 +134,6 @@ F 3 "" H 5450 1350 50  0001 C CNN
 	1    5450 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 1800 5950 1800
-Wire Wire Line
-	5950 1800 5950 1750
-Wire Wire Line
-	5950 1750 5850 1750
-Wire Wire Line
-	5850 1950 5950 1950
-Wire Wire Line
-	5950 1950 5950 1900
-Wire Wire Line
-	5950 1900 6000 1900
 $Comp
 L Eagle_Main:UA9637A U8
 U 1 1 61C98D29
@@ -605,13 +576,13 @@ F 3 "" H 4100 7150 50  0001 C CNN
 	1    4100 7150
 	1    0    0    -1  
 $EndComp
-Text HLabel 10150 3950 2    50   Output ~ 0
-WL_A
 Text HLabel 10150 4050 2    50   Output ~ 0
+WL_A
+Text HLabel 10150 3950 2    50   Output ~ 0
 WL_B
-Text HLabel 10050 5050 2    50   Output ~ 0
-WR_A
 Text HLabel 10050 5150 2    50   Output ~ 0
+WR_A
+Text HLabel 10050 5050 2    50   Output ~ 0
 WR_B
 $Comp
 L Device:R_Pack04 RN?
@@ -639,86 +610,32 @@ F 3 "~" H 9350 4950 50  0001 C CNN
 	1    9350 4950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Pack04_Split RN?
-U 1 1 61B8DE53
-P 5650 3800
-AR Path="/61B8DE53" Ref="RN?"  Part="1" 
-AR Path="/61C45647/61B8DE53" Ref="RN7"  Part="1" 
-F 0 "RN7" V 5750 3800 50  0000 C CNN
-F 1 "33" V 5650 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5925 3800 50  0001 C CNN
-F 3 "~" H 5650 3800 50  0001 C CNN
-	1    5650 3800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Pack04_Split RN?
-U 2 1 61B8F50B
-P 5650 4200
-AR Path="/61B8F50B" Ref="RN?"  Part="1" 
-AR Path="/61C45647/61B8F50B" Ref="RN7"  Part="2" 
-F 0 "RN7" V 5750 4200 50  0000 C CNN
-F 1 "33" V 5650 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5925 4200 50  0001 C CNN
-F 3 "~" H 5650 4200 50  0001 C CNN
-	2    5650 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Pack04_Split RN?
-U 3 1 61B8FA80
-P 5700 5950
-AR Path="/61B8FA80" Ref="RN?"  Part="1" 
-AR Path="/61C45647/61B8FA80" Ref="RN7"  Part="3" 
-F 0 "RN7" V 5800 5950 50  0000 C CNN
-F 1 "33" V 5700 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5975 5950 50  0001 C CNN
-F 3 "~" H 5700 5950 50  0001 C CNN
-	3    5700 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Pack04_Split RN?
-U 4 1 61B8FE69
-P 5700 6350
-AR Path="/61B8FE69" Ref="RN?"  Part="1" 
-AR Path="/61C45647/61B8FE69" Ref="RN7"  Part="4" 
-F 0 "RN7" V 5800 6350 50  0000 C CNN
-F 1 "33" V 5700 6350 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5975 6350 50  0001 C CNN
-F 3 "~" H 5700 6350 50  0001 C CNN
-	4    5700 6350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	6100 3800 5800 3800
+	5800 3800 5500 3800
 Wire Wire Line
-	6100 4200 5800 4200
-Text Label 6150 5950 2    50   ~ 0
+	5800 4200 5500 4200
+Text Label 5850 5950 2    50   ~ 0
 WR_A_5
-Text Label 6150 6350 2    50   ~ 0
+Text Label 5850 6350 2    50   ~ 0
 WR_B_5
 Wire Wire Line
-	6150 5950 5850 5950
+	5850 5950 5550 5950
 Wire Wire Line
-	6150 6350 5850 6350
-Text Label 8850 3950 0    50   ~ 0
-WL_A_5
+	5850 6350 5550 6350
 Text Label 8850 4050 0    50   ~ 0
+WL_A_5
+Text Label 8850 3950 0    50   ~ 0
 WL_B_5
 Wire Wire Line
-	8850 3950 9150 3950
-Wire Wire Line
 	8850 4050 9150 4050
-Text Label 8850 5050 0    50   ~ 0
+Wire Wire Line
+	8850 3950 9150 3950
+Text Label 8750 5150 0    50   ~ 0
 WR_A_5
-Text Label 8850 5150 0    50   ~ 0
+Text Label 8750 5050 0    50   ~ 0
 WR_B_5
 Wire Wire Line
-	8850 5050 9150 5050
-Wire Wire Line
-	8850 5150 9150 5150
+	8750 5050 9150 5050
 $Comp
 L power:GND #PWR?
 U 1 1 61BA0BD1
@@ -809,12 +726,12 @@ Connection ~ 9950 4550
 Wire Wire Line
 	9950 4550 9850 4550
 Wire Wire Line
-	6800 1800 6400 1800
+	6250 1750 5850 1750
 Wire Wire Line
-	6400 1900 6800 1900
-Text HLabel 10050 4850 2    50   Output ~ 0
+	5850 1950 6250 1950
+Text HLabel 10050 4950 2    50   Output ~ 0
 SW_DATA
-Text HLabel 10050 4950 2    50   Input ~ 0
+Text HLabel 10050 4850 2    50   Input ~ 0
 SW_CLK
 Wire Wire Line
 	10150 3950 9750 3950
@@ -834,14 +751,6 @@ NoConn ~ 9550 3750
 NoConn ~ 9550 3850
 NoConn ~ 9150 3850
 NoConn ~ 9150 3750
-Text Label 8750 4850 0    50   ~ 0
-SW_DATA_5
-Text Label 8750 4950 0    50   ~ 0
-SW_CLK_5
-Wire Wire Line
-	8750 4850 9150 4850
-Wire Wire Line
-	9150 4950 8750 4950
 NoConn ~ 9850 4150
 NoConn ~ 9950 4150
 $Comp
@@ -875,12 +784,22 @@ Wire Notes Line
 	2050 5300 6500 5300
 Text Notes 4650 1050 0    50   ~ 0
 TODO: check if footprint is correct, not sure
-Text Label 6100 4200 2    50   ~ 0
+Text Label 5800 4200 2    50   ~ 0
 WL_B_5
-Text Label 6100 3800 2    50   ~ 0
+Text Label 5800 3800 2    50   ~ 0
 WL_A_5
-Text Label 6800 1900 2    50   ~ 0
+Text Label 6250 1950 2    50   ~ 0
 SW_CLK_5
-Text Label 6800 1800 2    50   ~ 0
+Text Label 6250 1750 2    50   ~ 0
+SW_DATA_5
+Wire Wire Line
+	8750 5150 9150 5150
+Wire Wire Line
+	9150 4950 8750 4950
+Wire Wire Line
+	8750 4850 9150 4850
+Text Label 8750 4850 0    50   ~ 0
+SW_CLK_5
+Text Label 8750 4950 0    50   ~ 0
 SW_DATA_5
 $EndSCHEMATC
