@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title "DAS+ECU"
 Date "2021-12-13"
 Rev "v1"
@@ -223,7 +223,7 @@ F 1 "33" V 6350 1600 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6925 1600 50  0001 C CNN
 F 3 "~" H 6650 1600 50  0001 C CNN
 	1    6650 1600
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -271,8 +271,8 @@ $Comp
 L Connector:TestPoint TP1
 U 1 1 61DDBED0
 P 4250 3600
-F 0 "TP1" V 4450 3850 50  0000 C CNN
-F 1 "VCAP" V 4350 3850 50  0000 C CNN
+F 0 "TP1" V 4250 3850 50  0000 C CNN
+F 1 "VCAP" V 4150 3800 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4450 3600 50  0001 C CNN
 F 3 "~" H 4450 3600 50  0001 C CNN
 	1    4250 3600
@@ -315,8 +315,6 @@ F 3 "" H 2550 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 1700 4850 1700
-Text Notes 900  4450 0    50   ~ 0
-????
 Wire Wire Line
 	2200 2600 2550 2600
 Text Label 2200 2600 0    50   ~ 0
@@ -351,12 +349,10 @@ F 3 "~" H 1300 2150 50  0001 C CNN
 	1    1300 2150
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 4500 0    50   BiDi ~ 0
+Text HLabel 2550 1600 0    50   BiDi ~ 0
 SWD_GPIO
 Text HLabel 2550 2000 0    50   Input ~ 0
 ~RST~
-Text HLabel 4450 1000 1    50   Input ~ 0
-SWCLK
 Text HLabel 5250 1700 2    50   BiDi ~ 0
 SWDIO
 Wire Wire Line
@@ -476,7 +472,7 @@ Text HLabel 2550 2800 0    50   Input ~ 0
 WR_B
 Text HLabel 2550 2700 0    50   Input ~ 0
 WR_A
-Text Label 1150 4600 2    50   ~ 0
+Text Label 2200 4900 0    50   ~ 0
 BUZZER
 $Comp
 L power:GND #PWR093
@@ -849,12 +845,12 @@ P 1200 6100
 AR Path="/61D035BE" Ref="RN?"  Part="1" 
 AR Path="/61C45647/61D035BE" Ref="RN?"  Part="2" 
 AR Path="/61A00C0D/61D035BE" Ref="RN1"  Part="2" 
-F 0 "RN1" V 1100 6100 50  0000 C CNN
+F 0 "RN1" V 1300 6100 50  0000 C CNN
 F 1 "33" V 1200 6100 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1475 6100 50  0001 C CNN
 F 3 "~" H 1200 6100 50  0001 C CNN
 	2    1200 6100
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
@@ -863,12 +859,12 @@ P 1200 6000
 AR Path="/61D035B8" Ref="RN?"  Part="1" 
 AR Path="/61C45647/61D035B8" Ref="RN?"  Part="1" 
 AR Path="/61A00C0D/61D035B8" Ref="RN1"  Part="1" 
-F 0 "RN1" V 1300 6000 50  0000 C CNN
+F 0 "RN1" V 1100 6000 50  0000 C CNN
 F 1 "33" V 1200 6000 50  0000 C CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1475 6000 50  0001 C CNN
 F 3 "~" H 1200 6000 50  0001 C CNN
 	1    1200 6000
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Text Notes 750  5550 0    50   ~ 0
 Transceiver for when nvidia is used.
@@ -984,7 +980,7 @@ F 1 "100k" H 8970 5595 50  0000 R CNN
 F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9525 5550 50  0001 C CNN
 F 3 "~" H 9250 5550 50  0001 C CNN
 	1    9250 5550
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN18
@@ -1149,28 +1145,28 @@ $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
 U 3 1 61DA8C03
-P 5200 6000
+P 3200 6100
 AR Path="/61DA8C03" Ref="RN?"  Part="3" 
 AR Path="/61A00C0D/61DA8C03" Ref="RN13"  Part="3" 
-F 0 "RN13" V 5100 6000 50  0000 C CNN
-F 1 "33" V 5200 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5120 6000 50  0001 C CNN
-F 3 "~" H 5200 6000 50  0001 C CNN
-	3    5200 6000
+F 0 "RN13" V 3300 6100 50  0000 C CNN
+F 1 "33" V 3200 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3120 6100 50  0001 C CNN
+F 3 "~" H 3200 6100 50  0001 C CNN
+	3    3200 6100
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
 U 4 1 61DA8C09
-P 5200 6100
+P 3200 6000
 AR Path="/61DA8C09" Ref="RN?"  Part="4" 
 AR Path="/61A00C0D/61DA8C09" Ref="RN13"  Part="4" 
-F 0 "RN13" V 5100 6100 50  0000 C CNN
-F 1 "33" V 5200 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5120 6100 50  0001 C CNN
-F 3 "~" H 5200 6100 50  0001 C CNN
-	4    5200 6100
-	0    1    -1   0   
+F 0 "RN13" V 3100 6000 50  0000 C CNN
+F 1 "33" V 3200 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3120 6000 50  0001 C CNN
+F 3 "~" H 3200 6000 50  0001 C CNN
+	4    3200 6000
+	0    -1   1    0   
 $EndComp
 $Comp
 L Interface_CAN_LIN:MCP2562-E-SN U?
@@ -1379,27 +1375,27 @@ CAN1_TX
 $Comp
 L Device:R_Pack04_Split RN?
 U 1 1 61DA8C0F
-P 3200 6000
+P 5200 6100
 AR Path="/61DA8C0F" Ref="RN?"  Part="1" 
 AR Path="/61A00C0D/61DA8C0F" Ref="RN13"  Part="1" 
-F 0 "RN13" V 3100 6000 50  0000 C CNN
-F 1 "33" V 3200 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3120 6000 50  0001 C CNN
-F 3 "~" H 3200 6000 50  0001 C CNN
-	1    3200 6000
+F 0 "RN13" V 5300 6100 50  0000 C CNN
+F 1 "33" V 5200 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5120 6100 50  0001 C CNN
+F 3 "~" H 5200 6100 50  0001 C CNN
+	1    5200 6100
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
 U 2 1 61DA8BFD
-P 3200 6100
+P 5200 6000
 AR Path="/61DA8BFD" Ref="RN?"  Part="2" 
 AR Path="/61A00C0D/61DA8BFD" Ref="RN13"  Part="2" 
-F 0 "RN13" V 3300 6100 50  0000 C CNN
-F 1 "33" V 3200 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 3120 6100 50  0001 C CNN
-F 3 "~" H 3200 6100 50  0001 C CNN
-	2    3200 6100
+F 0 "RN13" V 5100 6000 50  0000 C CNN
+F 1 "33" V 5200 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5120 6000 50  0001 C CNN
+F 3 "~" H 5200 6000 50  0001 C CNN
+	2    5200 6000
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -1560,10 +1556,10 @@ Wire Wire Line
 	6100 4750 5800 4750
 Text Label 7050 4750 0    50   ~ 0
 BUZZER_1
-Text Label 6100 4650 2    50   ~ 0
-BUZZER
+Text Label 6200 4650 2    50   ~ 0
+BUZZER_1
 Wire Wire Line
-	6100 4650 5800 4650
+	6200 4650 5800 4650
 $Comp
 L power:GND #PWR?
 U 1 1 61DC58D4
@@ -1616,9 +1612,9 @@ F 3 "" H 6400 4750 50  0001 C CNN
 	1    6400 4750
 	0    1    1    0   
 $EndComp
-Text Label 1150 4700 2    50   ~ 0
+Text Label 3750 3750 1    50   ~ 0
 ~CS_EEPROM~
-Text Label 1150 4800 2    50   ~ 0
+Text Label 3850 3750 1    50   ~ 0
 ~HOLD~
 $Comp
 L power:GND1 #PWR0110
@@ -1855,17 +1851,215 @@ VCAP_1
 Wire Wire Line
 	6750 6250 6850 6250
 Connection ~ 6850 6250
-Text HLabel 5800 4850 2    50   Input ~ 0
+Text HLabel 10650 6700 2    50   Output ~ 0
+SPI2_MOSI_1
+Text HLabel 10650 6800 2    50   Input ~ 0
+SPI2_MISO_1
+Text HLabel 10650 6900 2    50   Output ~ 0
+SPI2_SCK_1
+Text HLabel 3950 3300 3    50   Output ~ 0
+CSB_ACC
+Text HLabel 4050 3300 3    50   Output ~ 0
+CSB_GYR
+Text HLabel 4150 3300 3    50   Input ~ 0
+ACC_INT
+Text HLabel 4850 3000 2    50   Input ~ 0
+GYR_INT
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 61E074F5
+P 4150 4750
+AR Path="/61E074F5" Ref="RN?"  Part="1" 
+AR Path="/61C45647/61E074F5" Ref="RN?"  Part="3" 
+AR Path="/61A00C0D/61E074F5" Ref="RN7"  Part="1" 
+F 0 "RN7" V 4350 4750 50  0000 C CNN
+F 1 "100k" V 3850 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 4425 4750 50  0001 C CNN
+F 3 "~" H 4150 4750 50  0001 C CNN
+	1    4150 4750
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3650 3300 3    50   Input ~ 0
+PITOT_PD
+$Comp
+L Device:LED D6
+U 1 1 61E4564F
+P 2950 4900
+F 0 "D6" H 2950 5000 50  0000 C CNN
+F 1 "LED" H 2950 4800 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2950 4900 50  0001 C CNN
+F 3 "~" H 2950 4900 50  0001 C CNN
+	1    2950 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61E4653C
+P 3100 4900
+AR Path="/61E4653C" Ref="#PWR?"  Part="1" 
+AR Path="/61B9CD30/61E4653C" Ref="#PWR?"  Part="1" 
+AR Path="/61A00C0D/61E4653C" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 3100 4650 50  0001 C CNN
+F 1 "GND" V 3100 4700 50  0000 C CNN
+F 2 "" H 3100 4900 50  0001 C CNN
+F 3 "" H 3100 4900 50  0001 C CNN
+	1    3100 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 61E474C3
+P 2650 4900
+F 0 "R16" V 2550 4900 50  0000 C CNN
+F 1 "1k" V 2650 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 4900 50  0001 C CNN
+F 3 "~" H 2650 4900 50  0001 C CNN
+	1    2650 4900
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4350 4850 2    50   Output ~ 0
+CSB_ACC
+Text HLabel 4350 4750 2    50   Output ~ 0
+CSB_GYR
+$Comp
+L power:+3.3V #PWR0134
+U 1 1 61E8E319
+P 3950 4750
+F 0 "#PWR0134" H 3950 4600 50  0001 C CNN
+F 1 "+3.3V" V 3950 5000 50  0000 C CNN
+F 2 "" H 3950 4750 50  0001 C CNN
+F 3 "" H 3950 4750 50  0001 C CNN
+	1    3950 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR098
+U 1 1 61E8E31F
+P 3950 4650
+F 0 "#PWR098" H 3950 4500 50  0001 C CNN
+F 1 "+3.3V" V 3950 4900 50  0000 C CNN
+F 2 "" H 3950 4650 50  0001 C CNN
+F 3 "" H 3950 4650 50  0001 C CNN
+	1    3950 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 61E9647E
+P 5500 4100
+F 0 "C37" H 5615 4146 50  0000 L CNN
+F 1 "100nF" H 5615 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 3950 50  0001 C CNN
+F 3 "~" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 3900 0    50   Input ~ 0
 ~RST~
 $Comp
-L power:+3.3V #PWR?
-U 1 1 61EE1614
+L Switch:SW_Push SW1
+U 1 1 61E98FAE
+P 5900 4100
+F 0 "SW1" V 5854 4248 50  0000 L CNN
+F 1 "RESET" V 5945 4248 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 5900 4300 50  0001 C CNN
+F 3 "~" H 5900 4300 50  0001 C CNN
+	1    5900 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3900 5500 3900
+Wire Wire Line
+	5500 3950 5500 3900
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5900 3900
+Wire Wire Line
+	5500 4250 5500 4300
+Wire Wire Line
+	5500 4300 5900 4300
+$Comp
+L power:GND #PWR?
+U 1 1 61EB467F
+P 5500 4300
+AR Path="/61EB467F" Ref="#PWR?"  Part="1" 
+AR Path="/61B9CD30/61EB467F" Ref="#PWR?"  Part="1" 
+AR Path="/61A00C0D/61EB467F" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 5500 4050 50  0001 C CNN
+F 1 "GND" H 5500 4150 50  0000 C CNN
+F 2 "" H 5500 4300 50  0001 C CNN
+F 3 "" H 5500 4300 50  0001 C CNN
+	1    5500 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 4300
+Text HLabel 2550 1700 0    50   Output ~ 0
+SD_CLOSE
+Text HLabel 2550 1500 0    50   Input ~ 0
+SD_IN
+Text Label 6250 4850 2    50   ~ 0
+MCU_SPI_CS
+Wire Wire Line
+	6250 4850 5800 4850
+Wire Wire Line
+	2200 4900 2500 4900
+Text Label 5200 2200 2    50   ~ 0
+BUZZER
+Wire Wire Line
+	5200 2200 4850 2200
+Wire Wire Line
+	3750 3750 3750 3300
+Wire Wire Line
+	3850 3750 3850 3300
+$Comp
+L power:+3.3V #PWR0139
+U 1 1 61E21AFB
+P 3950 4850
+F 0 "#PWR0139" H 3950 4700 50  0001 C CNN
+F 1 "+3.3V" V 3950 5100 50  0000 C CNN
+F 2 "" H 3950 4850 50  0001 C CNN
+F 3 "" H 3950 4850 50  0001 C CNN
+	1    3950 4850
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4450 1000 1    50   Input ~ 0
+SWCLK
+Text Label 10150 6700 0    50   ~ 0
+SPI2_MOSI_1
+Text Label 10150 6900 0    50   ~ 0
+SPI2_SCK_1
+Text Label 10150 6800 0    50   ~ 0
+SPI2_MISO_1
+Wire Wire Line
+	10150 6800 10650 6800
+Wire Wire Line
+	10150 6900 10650 6900
+Wire Wire Line
+	10150 6700 10650 6700
+Text HLabel 4350 4650 2    50   Input ~ 0
+GYR_INT
+$Comp
+L power:+3.3V #PWR0140
+U 1 1 61F908FA
 P 5400 4850
-F 0 "#PWR?" H 5400 4700 50  0001 C CNN
+F 0 "#PWR0140" H 5400 4700 50  0001 C CNN
 F 1 "+3.3V" V 5400 5100 50  0000 C CNN
 F 2 "" H 5400 4850 50  0001 C CNN
 F 3 "" H 5400 4850 50  0001 C CNN
 	1    5400 4850
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4350 4950 2    50   Input ~ 0
+ACC_INT
+$Comp
+L power:+3.3V #PWR0141
+U 1 1 61F9F921
+P 3950 4950
+F 0 "#PWR0141" H 3950 4800 50  0001 C CNN
+F 1 "+3.3V" V 3950 5200 50  0000 C CNN
+F 2 "" H 3950 4950 50  0001 C CNN
+F 3 "" H 3950 4950 50  0001 C CNN
+	1    3950 4950
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

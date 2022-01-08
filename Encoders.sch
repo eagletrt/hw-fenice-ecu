@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "DAS+ECU"
 Date "2021-12-13"
 Rev "v1"
@@ -43,7 +43,7 @@ F 3 "" H 3000 1700 50  0001 C CNN
 $EndComp
 Text Notes 700  5050 0    50   ~ 0
 Radial incremental magnetic rings: \nRLS MR075E060A120B00\n-outer diameter: 57mm\n-cross section height: 10mm\n-radial magnetisation\n-inner diameter: 85mm\n-with reference mark\n-number of poles: 120
-Text Label 2600 1800 0    50   ~ 0
+Text Label 2600 1900 0    50   ~ 0
 SW_CLK+
 $Comp
 L power:+5V #PWR?
@@ -71,20 +71,20 @@ F 3 "~" H 3200 1800 50  0001 C CNN
 	1    3200 1800
 	1    0    0    -1  
 $EndComp
-Text Label 2600 1900 0    50   ~ 0
+Text Label 3900 1900 2    50   ~ 0
 SW_CLK-
 Wire Wire Line
-	2600 1900 3000 1900
+	3900 1900 3500 1900
 Wire Wire Line
-	2600 1800 3000 1800
-Text Label 3900 1900 2    50   ~ 0
+	2600 1900 3000 1900
+Text Label 3900 1800 2    50   ~ 0
 SW_DATA-
 Wire Wire Line
-	3900 1900 3500 1900
-Text Label 3900 1800 2    50   ~ 0
+	3900 1800 3500 1800
+Text Label 2600 1800 0    50   ~ 0
 SW_DATA+
 Wire Wire Line
-	3900 1800 3500 1800
+	2600 1800 3000 1800
 $Comp
 L Interface_UART:MAX490E U3
 U 1 1 61C7DD68
@@ -171,22 +171,22 @@ F 3 "" H 2550 3800 50  0001 C CNN
 	1    2550 3800
 	0    1    1    0   
 $EndComp
-Text Label 3400 3900 2    50   ~ 0
-WL_A+
-Text Label 3400 4000 2    50   ~ 0
-WL_A-
-Wire Wire Line
-	3050 3900 3400 3900
-Wire Wire Line
-	3400 4000 3050 4000
 Text Label 2200 3900 0    50   ~ 0
-WL_B+
-Text Label 2200 4000 0    50   ~ 0
-WL_B-
+WL_A+
+Text Label 3400 3900 2    50   ~ 0
+WL_A-
 Wire Wire Line
 	2550 3900 2200 3900
 Wire Wire Line
-	2200 4000 2550 4000
+	3400 3900 3050 3900
+Text Label 2200 4000 0    50   ~ 0
+WL_B+
+Text Label 3400 4000 2    50   ~ 0
+WL_B-
+Wire Wire Line
+	2550 4000 2200 4000
+Wire Wire Line
+	3400 4000 3050 4000
 Text Label 4100 3700 0    50   ~ 0
 WL_A+
 Text Label 4100 3900 0    50   ~ 0
@@ -434,21 +434,19 @@ F 3 "" H 2600 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 3450 6050 2    50   ~ 0
-WR_A+
-Text Label 3450 6150 2    50   ~ 0
 WR_A-
-Wire Wire Line
-	3100 6050 3450 6050
-Wire Wire Line
-	3450 6150 3100 6150
-Text Label 2250 6050 0    50   ~ 0
-WR_B+
-Text Label 2250 6150 0    50   ~ 0
-WR_B-
 Wire Wire Line
 	2600 6050 2250 6050
 Wire Wire Line
-	2250 6150 2600 6150
+	3450 6050 3100 6050
+Text Label 2250 6150 0    50   ~ 0
+WR_B+
+Text Label 3450 6150 2    50   ~ 0
+WR_B-
+Wire Wire Line
+	2600 6150 2250 6150
+Wire Wire Line
+	3450 6150 3100 6150
 Text Label 4150 5850 0    50   ~ 0
 WR_A+
 Text Label 4150 6050 0    50   ~ 0
@@ -802,4 +800,6 @@ Text Label 8750 4850 0    50   ~ 0
 SW_CLK_5
 Text Label 8750 4950 0    50   ~ 0
 SW_DATA_5
+Text Label 2250 6050 0    50   ~ 0
+WR_A+
 $EndSCHEMATC

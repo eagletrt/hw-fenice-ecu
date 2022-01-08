@@ -54,13 +54,25 @@ The MCU STM32F446RET6 has the following design requirements and solutions found:
 	- SPI3 receive only master
 - EEPROM/SDCARD SPI
 	- SPI2
+- IMU:
+	- SPI2
 - 3 PWM channels for brakelight
 	- TIM3, Clock Source is internal clock
 - 4 ADC channels, 2 brakes and 2 accelerators
-	- AD1, 8kHz single channel sampling
+	- ADC1, 8kHz single channel sampling
+- Pitot tube pressure reading
+	- ADC1/2
 - CRC module
 - Buzzer PWM
 	- PWM channel on TIM1
+
+## IMU
+
+The IMU used is the Bosch BMI088 accelerometer and gyroscope 6-axis unit.
+
+### Interrupts
+INT1 new accelerometer data is setted as output of the IMU.
+INT3 new gyroscope data is setted as output of the IMU.
 
 ## Accelerator
 
