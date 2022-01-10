@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 5
 Title "DAS+ECU"
-Date "2021-12-13"
-Rev "v1"
+Date "2022-01-10"
+Rev "v1.0"
 Comp "E-Agle TRT"
-Comment1 ""
+Comment1 "Filippo Volpe"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -30,15 +30,15 @@ $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
 U 4 1 61D035CA
-P 7200 6900
+P 7200 6800
 AR Path="/61D035CA" Ref="RN?"  Part="1" 
 AR Path="/61C45647/61D035CA" Ref="RN?"  Part="4" 
 AR Path="/61A00C0D/61D035CA" Ref="RN1"  Part="4" 
-F 0 "RN1" V 7300 6900 50  0000 C CNN
-F 1 "33" V 7200 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7475 6900 50  0001 C CNN
-F 3 "~" H 7200 6900 50  0001 C CNN
-	4    7200 6900
+F 0 "RN1" V 7300 6800 50  0000 C CNN
+F 1 "33" V 7200 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7475 6800 50  0001 C CNN
+F 3 "~" H 7200 6800 50  0001 C CNN
+	4    7200 6800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2126,6 +2126,6 @@ NoConn ~ 5800 4950
 NoConn ~ 5400 4950
 NoConn ~ 6850 2450
 NoConn ~ 6450 2450
-NoConn ~ 7350 6900
-NoConn ~ 7050 6900
+NoConn ~ 7350 6800
+NoConn ~ 7050 6800
 $EndSCHEMATC

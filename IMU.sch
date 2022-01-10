@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 5
 Title ""
-Date ""
-Rev ""
+Date "2022-01-10"
+Rev "v1.0"
 Comp ""
-Comment1 ""
+Comment1 "Filippo Volpe"
 Comment2 ""
 Comment3 ""
 Comment4 ""

@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "DAS+ECU"
-Date "2021-12-13"
-Rev "v1"
+Date "2022-01-10"
+Rev "v1.0"
 Comp "E-Agle TRT"
-Comment1 ""
+Comment1 "Filippo Volpe"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -421,7 +421,7 @@ F 3 "" H 10400 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7750 650  0    100  ~ 20
-CONTROLL PWM SIGNAL BRAKELIGHT
+BRAKELIGHT
 Text Label 11100 2300 2    50   ~ 0
 BRAKELIGHT_CH3
 Text Label 11100 850  2    50   ~ 0
@@ -969,7 +969,9 @@ $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 61F170B6
 P 2200 1450
-F 0 "#FLG?" H 2200 1525 50  0001 C CNN
+AR Path="/61CED6C1/61F170B6" Ref="#FLG?"  Part="1" 
+AR Path="/61F170B6" Ref="#FLG0102"  Part="1" 
+F 0 "#FLG0102" H 2200 1525 50  0001 C CNN
 F 1 "PWR_FLAG" V 2200 1578 50  0000 L CNN
 F 2 "" H 2200 1450 50  0001 C CNN
 F 3 "~" H 2200 1450 50  0001 C CNN

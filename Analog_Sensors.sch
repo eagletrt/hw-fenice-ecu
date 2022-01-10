@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "DAS+ECU"
-Date "2021-12-13"
-Rev "v1"
+Date "2022-01-10"
+Rev "v1.0"
 Comp "E-Agle TRT"
-Comment1 ""
+Comment1 "Filippo Volpe"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1082,10 +1082,10 @@ F 3 "" H 800 7750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0103
 U 1 1 61F1280A
 P 800 7750
-F 0 "#FLG?" H 800 7825 50  0001 C CNN
+F 0 "#FLG0103" H 800 7825 50  0001 C CNN
 F 1 "PWR_FLAG" V 800 7878 50  0000 L CNN
 F 2 "" H 800 7750 50  0001 C CNN
 F 3 "~" H 800 7750 50  0001 C CNN

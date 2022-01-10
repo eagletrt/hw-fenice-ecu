@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 5
 Title "DAS+ECU"
-Date "2021-12-13"
-Rev "v1"
+Date "2022-01-10"
+Rev "v1.0"
 Comp "E-Agle TRT"
-Comment1 ""
+Comment1 "Filippo Volpe"
 Comment2 ""
 Comment3 ""
 Comment4 ""
