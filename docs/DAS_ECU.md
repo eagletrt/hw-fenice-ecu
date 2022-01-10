@@ -69,6 +69,7 @@ The MCU STM32F446RET6 has the following design requirements and solutions found:
 ## IMU
 
 The IMU used is the Bosch BMI088 accelerometer and gyroscope 6-axis unit.
+Set the unused pin as outputs to avoid them floating.
 
 ### Interrupts
 INT1 new accelerometer data is setted as output of the IMU.

@@ -1,4 +1,4 @@
-update=Sat 08 Jan 2022 17:45:09 CET
+update=Mon 10 Jan 2022 13:13:25 CET
 version=1
 last_client=kicad
 [general]
@@ -53,8 +53,8 @@ ViaDiameter4=0.8
 ViaDrill4=0.4
 ViaDiameter5=1
 ViaDrill5=0.5
-dPairWidth1=0.2
-dPairGap1=0.25
+dPairWidth1=0.25
+dPairGap1=0.2
 dPairViaGap1=0.25
 SilkLineWidth=0.12
 SilkTextSizeV=1
@@ -255,6 +255,17 @@ ViaDiameter=0.55
 ViaDrill=0.25
 uViaDiameter=0.3
 uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
+dPairWidth=0.25
+dPairGap=0.2
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=SDC
+Clearance=0.5
+TrackWidth=0.35
+ViaDiameter=0.55
+ViaDrill=0.25
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.25
+dPairGap=0.2
 dPairViaGap=0.25

@@ -16,16 +16,16 @@ $EndDescr
 $Comp
 L Device:R_Pack04_Split RN?
 U 3 1 61D035C4
-P 7200 6700
+P 6650 2800
 AR Path="/61D035C4" Ref="RN?"  Part="1" 
 AR Path="/61C45647/61D035C4" Ref="RN?"  Part="3" 
 AR Path="/61A00C0D/61D035C4" Ref="RN1"  Part="3" 
-F 0 "RN1" V 7300 6700 50  0000 C CNN
-F 1 "33" V 7200 6700 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 7475 6700 50  0001 C CNN
-F 3 "~" H 7200 6700 50  0001 C CNN
-	3    7200 6700
-	0    -1   -1   0   
+F 0 "RN1" V 6750 2800 50  0000 C CNN
+F 1 "33" V 6650 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 6925 2800 50  0001 C CNN
+F 3 "~" H 6650 2800 50  0001 C CNN
+	3    6650 2800
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Pack04_Split RN?
@@ -168,18 +168,18 @@ RASP_RTS
 Wire Wire Line
 	5900 2050 7450 2050
 Wire Wire Line
+	5900 2150 6450 2150
+Wire Wire Line
 	5900 2350 6450 2350
 Wire Wire Line
 	5900 2250 6450 2250
-Wire Wire Line
-	5900 2150 6450 2150
 Text Label 5900 2050 0    50   ~ 0
 MCU_SPI_CS
-Text Label 5900 2350 0    50   ~ 0
-MCU_SPI_CLK
-Text Label 5900 2250 0    50   ~ 0
-MCU_SPI_MOSI
 Text Label 5900 2150 0    50   ~ 0
+MCU_SPI_CLK
+Text Label 5900 2350 0    50   ~ 0
+MCU_SPI_MOSI
+Text Label 5900 2250 0    50   ~ 0
 MCU_SPI_MISO
 $Comp
 L Device:R_Pack04 RN?
@@ -254,18 +254,18 @@ F 3 "~" H 5600 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
+	7450 2150 6850 2150
+Wire Wire Line
 	7450 2350 6850 2350
 Wire Wire Line
 	7450 2250 6850 2250
-Wire Wire Line
-	7450 2150 6850 2150
 Text Label 7450 2050 2    50   ~ 0
 RASP_SPI_CS
-Text Label 7450 2350 2    50   ~ 0
-RASP_SPI_CLK
-Text Label 7450 2250 2    50   ~ 0
-RASP_SPI_MOSI
 Text Label 7450 2150 2    50   ~ 0
+RASP_SPI_CLK
+Text Label 7450 2350 2    50   ~ 0
+RASP_SPI_MOSI
+Text Label 7450 2250 2    50   ~ 0
 RASP_SPI_MISO
 $Comp
 L Connector:TestPoint TP1
@@ -1119,8 +1119,6 @@ F 3 "" H 10700 5600 50  0001 C CNN
 	1    10700 5600
 	1    0    0    -1  
 $EndComp
-Text Notes -1500 4550 0    50   ~ 0
-\n\n\nF446:\n\nTIM2\nPB3     Wheel left_B\nPA15   Wheel left_A\n\nTIM1\nPA8     BUZZER\n\nTIM5\nPA0     Wheel right_A\nPA1     Wheel right_B\n\nADC1\nPC0     brake_front\nPC1     brake_rear\nPC2     accelerator_ch1\nPC3     accelerator_ch2\n\n3 PWM\nTIM3_CH3     BRAKE_LIGHT_CH3\nTIM3_CH2     BRAKE_LIGHT_CH2\nTIM3_CH1     BRAKE_LIGHT_CH1\n\nCAN (con trnciver a monte) \nPB9     CAN1_TX\nPB8     CAN1_RX\nPB6     CAN2_TX\nPB5     CAN2_RX\n\nMCU / SBC\nPA12     RTS\nPA11     CTS\nPA10     RX\nPA9       TX\n\nSteering position Encoder\nPC11     SPI3_MISO      SW_DATA\nPC10     SPI3_SCK         SW_CLK\n\nEEPROM M95256-WMN6P\nPB15     SPI2_MOSI ==>M95256\nPB14     SPI2_MISO ==>M95256	\nPB13     SPI2_SCK  ==>M95256\n\n\n\nRCC_OSC\nPH0     quartz 16Mhz\nPH1     quartz 16Mhz\n\n
 Wire Wire Line
 	5900 1700 6450 1700
 Wire Wire Line
@@ -1581,13 +1579,13 @@ CAN1-
 Text HLabel 2350 6300 2    50   BiDi ~ 0
 CAN1-
 Wire Wire Line
-	6850 2450 7450 2450
-Text Label 7450 2450 2    50   ~ 0
+	6800 2800 7450 2800
+Text Label 7450 2800 2    50   ~ 0
 BUZZER_1
-Text Label 5900 2450 0    50   ~ 0
+Text Label 5900 2800 0    50   ~ 0
 BUZZER
 Wire Wire Line
-	5900 2450 6450 2450
+	5900 2800 6500 2800
 Text Label 10050 5650 2    50   ~ 0
 ~CS_EEPROM~
 $Comp
@@ -2062,4 +2060,72 @@ F 3 "" H 3950 4950 50  0001 C CNN
 	1    3950 4950
 	0    -1   -1   0   
 $EndComp
+Text Label 3450 600  3    50   ~ 0
+PB7
+Wire Wire Line
+	3450 600  3450 1000
+Wire Wire Line
+	3750 600  3750 1000
+Wire Wire Line
+	3950 1000 3950 600 
+Wire Wire Line
+	4050 1000 4050 600 
+Wire Wire Line
+	4850 2300 5200 2300
+Text Label 3750 600  3    50   ~ 0
+PB4
+Text Label 3950 600  3    50   ~ 0
+PD2
+Text Label 4050 600  3    50   ~ 0
+PC12
+Text Label 5200 2300 2    50   ~ 0
+PC9
+Text Label 750  4950 0    50   ~ 0
+PB7
+Text Label 750  4850 0    50   ~ 0
+PD2
+Text Label 1850 4750 2    50   ~ 0
+PC12
+Text Label 1850 4850 2    50   ~ 0
+PB4
+Text Label 1850 4950 2    50   ~ 0
+PC9
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J13
+U 1 1 61E94600
+P 1250 4850
+F 0 "J13" H 1300 5167 50  0000 C CNN
+F 1 "SPARE_PINS" H 1300 5076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1250 4850 50  0001 C CNN
+F 3 "~" H 1250 4850 50  0001 C CNN
+	1    1250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 61E94C60
+P 1050 4750
+F 0 "#PWR0142" H 1050 4500 50  0001 C CNN
+F 1 "GND" V 1050 4550 50  0000 C CNN
+F 2 "" H 1050 4750 50  0001 C CNN
+F 3 "" H 1050 4750 50  0001 C CNN
+	1    1050 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 4750 1550 4750
+Wire Wire Line
+	1850 4850 1550 4850
+Wire Wire Line
+	1050 4850 750  4850
+Wire Wire Line
+	1050 4950 750  4950
+Wire Wire Line
+	1550 4950 1850 4950
+NoConn ~ 5800 4950
+NoConn ~ 5400 4950
+NoConn ~ 6850 2450
+NoConn ~ 6450 2450
+NoConn ~ 7350 6900
+NoConn ~ 7050 6900
 $EndSCHEMATC
