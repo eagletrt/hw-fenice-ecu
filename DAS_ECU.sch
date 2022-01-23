@@ -543,7 +543,7 @@ U 1 1 61F811F5
 P 9750 6000
 F 0 "H4" H 9850 6046 50  0000 L CNN
 F 1 "MountingHole" H 9850 5955 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9750 6000 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9750 6000 50  0001 C CNN
 F 3 "~" H 9750 6000 50  0001 C CNN
 	1    9750 6000
 	1    0    0    -1  
@@ -554,7 +554,7 @@ U 1 1 61F8133A
 P 9750 6200
 F 0 "H5" H 9850 6246 50  0000 L CNN
 F 1 "MountingHole" H 9850 6155 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9750 6200 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9750 6200 50  0001 C CNN
 F 3 "~" H 9750 6200 50  0001 C CNN
 	1    9750 6200
 	1    0    0    -1  
@@ -565,7 +565,7 @@ U 1 1 61F8156A
 P 9050 6200
 F 0 "H2" H 9150 6246 50  0000 L CNN
 F 1 "MountingHole" H 9150 6155 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9050 6200 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9050 6200 50  0001 C CNN
 F 3 "~" H 9050 6200 50  0001 C CNN
 	1    9050 6200
 	1    0    0    -1  
@@ -576,7 +576,7 @@ U 1 1 61F8193F
 P 9050 6000
 F 0 "H1" H 9150 6046 50  0000 L CNN
 F 1 "MountingHole" H 9150 5955 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9050 6000 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9050 6000 50  0001 C CNN
 F 3 "~" H 9050 6000 50  0001 C CNN
 	1    9050 6000
 	1    0    0    -1  
@@ -587,7 +587,7 @@ U 1 1 61F81B25
 P 9750 6400
 F 0 "H6" H 9850 6446 50  0000 L CNN
 F 1 "MountingHole" H 9850 6355 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9750 6400 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9750 6400 50  0001 C CNN
 F 3 "~" H 9750 6400 50  0001 C CNN
 	1    9750 6400
 	1    0    0    -1  
@@ -598,7 +598,7 @@ U 1 1 61F8203A
 P 9050 6400
 F 0 "H3" H 9150 6446 50  0000 L CNN
 F 1 "MountingHole" H 9150 6355 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 9050 6400 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 9050 6400 50  0001 C CNN
 F 3 "~" H 9050 6400 50  0001 C CNN
 	1    9050 6400
 	1    0    0    -1  
@@ -609,7 +609,7 @@ U 1 1 61F822D4
 P 10450 6000
 F 0 "H7" H 10550 6046 50  0000 L CNN
 F 1 "MountingHole" H 10550 5955 50  0000 L CNN
-F 2 "Eagle_Main:MountingHole_2.75_6.1Free" H 10450 6000 50  0001 C CNN
+F 2 "Eagle_Main:MountingHole_3.2mm_M3_ISO14580" H 10450 6000 50  0001 C CNN
 F 3 "~" H 10450 6000 50  0001 C CNN
 	1    10450 6000
 	1    0    0    -1  
