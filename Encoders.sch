@@ -780,8 +780,6 @@ Text Notes 2150 3100 0    100  ~ 20
 LEFT WHEEL ENCODER
 Wire Notes Line
 	2050 5300 6500 5300
-Text Notes 4650 1050 0    50   ~ 0
-TODO: check if footprint is correct, not sure
 Text Label 5800 4200 2    50   ~ 0
 WL_B_5
 Text Label 5800 3800 2    50   ~ 0
@@ -802,4 +800,6 @@ Text Label 8750 4950 0    50   ~ 0
 SW_DATA_5
 Text Label 2250 6050 0    50   ~ 0
 WR_A+
+Text Notes 2900 925  0    50   ~ 0
+NOTE: The wires need to be connected to their opposite counterpart on the board, otherwise the encoder doesn't work.\n\nThe Clock+ (white) and Clock- (brown) wires need to be connected to SW_CLK- and SW_CLK+ respectively.\nThe Data+ (green) and Data- (yellow) wires need to be connected to SW_DATA- and SW_DATA+ respectively.
 $EndSCHEMATC
