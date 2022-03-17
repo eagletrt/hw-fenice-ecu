@@ -1707,7 +1707,7 @@
     (pin "7" (uuid f7bb8a68-ac99-412f-94a2-31505347572f))
   )
 
-  (symbol (lib_id "Device:R_Pack04") (at 40.64 116.84 90)
+  (symbol (lib_id "Device:R_Pack04") (at 40.64 116.84 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061bc09fd)
     (property "Reference" "RN5" (id 0) (at 40.64 111.76 90))
@@ -1728,7 +1728,7 @@
     (pin "8" (uuid 8c63b375-b2d8-481f-a8d3-1013d8606c9f))
   )
 
-  (symbol (lib_id "Device:R_Pack04") (at 53.34 129.54 0)
+  (symbol (lib_id "Device:R_Pack04") (at 53.34 129.54 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061bde363)
     (property "Reference" "RN6" (id 0) (at 58.42 129.54 90))
@@ -1902,7 +1902,7 @@
     (pin "2" (uuid 053133dc-fd2e-4c87-86c2-c888eb4cfe87))
   )
 
-  (symbol (lib_id "Amplifier_Operational:LM358") (at 44.45 35.56 0)
+  (symbol (lib_id "Amplifier_Operational:LM358") (at 44.45 35.56 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061d07510)
     (property "Reference" "U4" (id 0) (at 44.45 26.2382 0))
@@ -1937,7 +1937,7 @@
     (pin "2" (uuid 53fd1cdd-185b-41df-ad3b-312942edcf7d))
   )
 
-  (symbol (lib_id "Amplifier_Operational:LM358") (at 77.47 175.26 0)
+  (symbol (lib_id "Amplifier_Operational:LM358") (at 77.47 175.26 0) (unit 3)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061d409e9)
     (property "Reference" "U4" (id 0) (at 76.4032 174.0916 0)
@@ -2374,7 +2374,7 @@
     (pin "1" (uuid 0d6c1a1a-175e-40e8-b2c5-e7836f213148))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x02_Top_Bottom") (at 144.78 163.83 0)
+  (symbol (lib_id "Connector_Generic:Conn_02x02_Top_Bottom") (at 144.78 163.83 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f3156c)
     (property "Reference" "J7" (id 0) (at 146.05 161.29 0))
@@ -2616,7 +2616,7 @@
     (pin "2" (uuid 40955d21-1e97-4663-a2fe-48f4f9d93445))
   )
 
-  (symbol (lib_id "Amplifier_Operational:LM358") (at 109.22 38.1 0)
+  (symbol (lib_id "Amplifier_Operational:LM358") (at 109.22 38.1 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000620c96de)
     (property "Reference" "U6" (id 0) (at 109.22 28.7782 0))

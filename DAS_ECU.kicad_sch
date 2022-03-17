@@ -1978,7 +1978,7 @@
     (pin "8" (uuid 9a6e9856-007c-4e01-a089-a4387c80fe37))
   )
 
-  (symbol (lib_id "Eagle_Main:SWDEBUG_CONN") (at 132.08 27.94 0)
+  (symbol (lib_id "Eagle_Main:SWDEBUG_CONN") (at 132.08 27.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061b940d0)
     (property "Reference" "J4" (id 0) (at 132.08 17.145 0))
@@ -2001,7 +2001,7 @@
     (pin "9" (uuid 9ca71800-ce3c-4690-b067-c08f33a2f504))
   )
 
-  (symbol (lib_id "power:GND") (at 123.19 22.86 270)
+  (symbol (lib_id "power:GND") (at 123.19 22.86 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061b940d6)
     (property "Reference" "#PWR033" (id 0) (at 116.84 22.86 0)
@@ -2017,7 +2017,7 @@
     (pin "1" (uuid bb023652-6795-4ede-84c3-40f3c889a388))
   )
 
-  (symbol (lib_id "power:GND") (at 140.97 22.86 90)
+  (symbol (lib_id "power:GND") (at 140.97 22.86 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061b940dc)
     (property "Reference" "#PWR035" (id 0) (at 147.32 22.86 0)
@@ -2033,7 +2033,7 @@
     (pin "1" (uuid 9259f2e9-f414-44ee-8489-3bf23fe74070))
   )
 
-  (symbol (lib_id "power:+3.3V") (at 115.57 30.48 90)
+  (symbol (lib_id "power:+3.3V") (at 115.57 30.48 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061b9a3f3)
     (property "Reference" "#PWR034" (id 0) (at 119.38 30.48 0)
@@ -2334,7 +2334,7 @@
     (pin "7" (uuid 9d81d95c-5078-4273-9818-6f0eefcf5392))
   )
 
-  (symbol (lib_id "power:+3.3V") (at 81.28 21.59 90)
+  (symbol (lib_id "power:+3.3V") (at 81.28 21.59 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e72aa5)
     (property "Reference" "#PWR026" (id 0) (at 85.09 21.59 0)
@@ -2352,7 +2352,7 @@
     (pin "1" (uuid bb6b96ca-5888-42a1-8ae0-457aa509f061))
   )
 
-  (symbol (lib_id "power:+5V") (at 81.28 29.21 90)
+  (symbol (lib_id "power:+5V") (at 81.28 29.21 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e72f16)
     (property "Reference" "#PWR031" (id 0) (at 85.09 29.21 0)
@@ -2370,7 +2370,7 @@
     (pin "1" (uuid ad754c72-ec16-495f-a7bc-fe28759211e8))
   )
 
-  (symbol (lib_id "power:+5V") (at 81.28 31.75 90)
+  (symbol (lib_id "power:+5V") (at 81.28 31.75 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e735d3)
     (property "Reference" "#PWR032" (id 0) (at 85.09 31.75 0)
@@ -2388,7 +2388,7 @@
     (pin "1" (uuid 59110d44-75e0-44b0-a4b5-f2a3a3504085))
   )
 
-  (symbol (lib_id "power:GND") (at 81.28 24.13 270)
+  (symbol (lib_id "power:GND") (at 81.28 24.13 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e73db6)
     (property "Reference" "#PWR029" (id 0) (at 74.93 24.13 0)
@@ -2406,7 +2406,7 @@
     (pin "1" (uuid 8f01071b-4a75-4c6d-86e2-8b9291d3a248))
   )
 
-  (symbol (lib_id "power:GND") (at 81.28 26.67 270)
+  (symbol (lib_id "power:GND") (at 81.28 26.67 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e74296)
     (property "Reference" "#PWR030" (id 0) (at 74.93 26.67 0)
@@ -2424,7 +2424,7 @@
     (pin "1" (uuid 5dd3a851-d412-45a1-86ea-fe5d38347b20))
   )
 
-  (symbol (lib_id "power:GND") (at 81.28 34.29 270)
+  (symbol (lib_id "power:GND") (at 81.28 34.29 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e74411)
     (property "Reference" "#PWR0144" (id 0) (at 74.93 34.29 0)
@@ -2442,7 +2442,7 @@
     (pin "1" (uuid 37b6c3cb-c9ee-40f6-9703-3fa8dc949d54))
   )
 
-  (symbol (lib_id "power:+12V") (at 81.28 36.83 90)
+  (symbol (lib_id "power:+12V") (at 81.28 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e7482d)
     (property "Reference" "#PWR0147" (id 0) (at 85.09 36.83 0)
@@ -2460,7 +2460,7 @@
     (pin "1" (uuid b3e32b98-1a2e-435a-b94e-1175d1f0f4df))
   )
 
-  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 119.38 30.48 0) (mirror y)
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 119.38 30.48 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061e97f8a)
     (property "Reference" "JP6" (id 0) (at 118.11 29.21 0)
@@ -2479,7 +2479,7 @@
     (pin "2" (uuid dcf85b2e-72b7-41cb-87a0-2413166cc235))
   )
 
-  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 144.78 30.48 0)
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 144.78 30.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ea0276)
     (property "Reference" "JP7" (id 0) (at 146.05 29.21 0)
@@ -2498,7 +2498,7 @@
     (pin "2" (uuid 90346d44-ccb0-449a-91ef-fa130e7c7aff))
   )
 
-  (symbol (lib_id "power:+5V") (at 148.59 30.48 270)
+  (symbol (lib_id "power:+5V") (at 148.59 30.48 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ead617)
     (property "Reference" "#PWR0148" (id 0) (at 144.78 30.48 0)
@@ -2608,7 +2608,7 @@
     (pin "1" (uuid fcbd0212-bb54-4deb-b42e-feb0f5354e78))
   )
 
-  (symbol (lib_id "Diode:1N4148W") (at 228.6 119.38 270)
+  (symbol (lib_id "Diode:1N4148W") (at 228.6 119.38 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ecdfdf)
     (property "Reference" "D7" (id 0) (at 224.79 118.11 90)
@@ -2663,7 +2663,7 @@
     (pin "1" (uuid 43da9843-2e6f-49e0-993c-20f4f3f6eb41))
   )
 
-  (symbol (lib_id "power:PWR_FLAG") (at 55.88 36.83 90)
+  (symbol (lib_id "power:PWR_FLAG") (at 55.88 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f170b6)
     (property "Reference" "#FLG0102" (id 0) (at 53.975 36.83 0)
@@ -2681,7 +2681,7 @@
     (pin "1" (uuid 393a3e94-15ac-4253-9383-aea5b6839603))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 205.74 109.22 0) (mirror y)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 205.74 109.22 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f57cf0)
     (property "Reference" "J12" (id 0) (at 201.93 109.22 0))
@@ -2815,7 +2815,7 @@
     )
   )
 
-  (symbol (lib_id "Device:D_Zener") (at 274.32 135.89 90) (mirror x)
+  (symbol (lib_id "Device:D_Zener") (at 274.32 135.89 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061f920e9)
     (property "Reference" "D8" (id 0) (at 272.288 134.7216 90)
