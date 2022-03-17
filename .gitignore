@@ -1,4 +1,3 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
 # Temporary files
@@ -20,5 +19,23 @@ fp-info-cache
 # Netlist files (exported from Eeschema)
 *.net
 
-# 
-output/
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+# PCB output files
+/output/*
+
+# Backup files
+DAS_ECU-backups/
+
+# Cubemx config files
+/stm32cubemx/*
+!stm32cubemx/*/*.ioc
+
+# Python files
+.ipynb_checkpoints/
