@@ -12,6 +12,3 @@ ECU hardware design of the E-Agle Trento Racing Team car which run on Fenice.
 
 Documentation can be found under [`./docs/DAS_ECU.md`](./docs/DAS_ECU.md)
 
-## License
-
-The work is released under [CERN-OHL-S](./LICENSE) license.
